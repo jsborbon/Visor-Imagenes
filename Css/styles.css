@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+}
+section {
+    float: left;
+}
+
+main {
+
+    overflow: hidden;
+}
+
+.visor {
+    width: 75%;
+}
+
+.contenedorVisor {
+    overflow: hidden;
+    background: dimgrey;
+    text-align: center;
+    height: 34.5rem;
+}
+
+.figure {
+    overflow: hidden;
+}
+
+figcaption {
+    padding: 1rem;
+    color: blanchedalmond;
+    background: rgba(0, 0, 0, 0.9);
+}
+a{
+    color: darkcyan;
+}
+
+.panelControl {
+    width: 25%;
+}
+
+.fotos img {
+    width: 6.5rem;
+    height: 6.5rem;
+    padding: 0px;
+    border: 0px;
+    margin: 2px;
+}
+.control{
+    text-align: center;
+}
+.botones{
+    overflow: hidden;
+}
+.lupa, .flechas{
+    float: left;
+}
+.lupa button{
+    display: block;
+    width: 3rem;
+    height: 2rem;
+}
+.flechas{
+    margin-left: 2rem;
+}
+input[type=button]{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5rem;
+    height: 4rem;
+    border: 0px;
+}
+
+#cambiarFotoIzquierda {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dark_blue_left_arrow.svg/1054px-Dark_blue_left_arrow.svg.png);
+}
+#cambiarFotoDerecha {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dark_blue_left_arrow.svg/1054px-Dark_blue_left_arrow.svg.png);
+    transform: rotate(180deg);
+}

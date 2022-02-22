@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="Js/script.js"></script>
+    <link rel="stylesheet" href="Css/styles.css">
+    <title>Visualizador de Imágenes</title>
+</head>
+<body onload="cargarFotos();">
+<main>
+    <section class="visor">
+        <figure id="figuraVisor">
+            <div class="contenedorVisor">
+                <img src="#" id="fotoVisor">
+
+            </div>
+            <figcaption></figcaption>
+        </figure>
+    </section>
+    <section class="panelControl">
+        <div class="fotos"></div>
+        <div class="control">
+        <div class="botones">
+            <div class="lupa">
+                <button type="button" onclick="aumentar()">+</button>
+            <button type="button" onclick="reducir()">-</button>
+            </div>
+            <div class="flechas">
+            <input type="button" onclick="cambiarIzq();" id="cambiarFotoIzquierda">
+            <input type="button" onclick="cambiarDer();" id="cambiarFotoDerecha">
+            </div>
+               </div>
+            <a onclick="cambiarEstado();"><h2 id="rotacionAutomatica"></h2></a>
+        </div>
+
+    </section>
+    <div id="dss"></div>
+</main>
+</body>
+</html>
